@@ -1,0 +1,68 @@
+"use client";
+
+import * as React from "react";
+import { cn } from "@/lib/utils";
+
+export interface CardStickyProps
+  extends React.HTMLAttributes<HTMLDivElement> {
+  index: number;
+  incrementY?: number;
+  incrementZ?: number;
+}
+
+const ContainerScroll = React.forwardRef<
+  HTMLDivElement,
+  React.HTMLProps<HTMLDivElement>
+>(({ children, className, style, ...props }, ref) => {
+  return (
+    <div
+      ref={ref}
+      className={cn("relative w-full", className)}
+      style={{ perspective: "1000px", ...style }}
+      {...props}
+    >
+      {children}
+    </div>
+  );
+});
+
+ContainerScroll.displayName = "ContainerScroll";
+
+const CardSticky = React.forwardRef<HTMLDivElement, CardStickyProps>(
+  (
+    {
+      index,
+      incrementY = 10,
+      incrementZ = 10,
+      children,
+      className,
+      style,
+      ...props
+    },
+    ref
+  ) => {
+    const y = index * incrementY;
+    const z = index * incrementZ;
+
+    return (
+      <div
+        ref={ref}
+        style={{
+          top: y,
+          transform: `translateZ(${z}px)`,
+          backfaceVisibility: "hidden",
+          ...style,
+        }}
+        className={cn("sticky", className)}
+        {...props}
+      >
+        {children}
+      </div>
+    );
+  }
+);
+
+CardSticky.displayName = "CardSticky";
+
+export { ContainerScroll, CardSticky };
+
