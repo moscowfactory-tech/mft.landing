@@ -31,7 +31,7 @@ jobs:
       - name: Build
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /checkyourtrade
+          NEXT_PUBLIC_BASE_PATH: /mft.landing
 
       - uses: actions/upload-pages-artifact@v3
         with:
