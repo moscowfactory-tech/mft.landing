@@ -183,6 +183,19 @@ export const LimelightNav = ({
   const [activeIndex, setActiveIndex] = useState(getInitialActiveIndex);
   const [isReady, setIsReady] = useState(false);
 
+  useEffect(() => {
+    if (pathname === "/cases") {
+      const idx = navItems.findIndex((item) => item.id === "cases");
+      if (idx !== -1) setActiveIndex(idx);
+    } else if (pathname.startsWith("/services")) {
+      const idx = navItems.findIndex((item) => item.id === "services");
+      if (idx !== -1) setActiveIndex(idx);
+    } else if (pathname === "/") {
+      const idx = navItems.findIndex((item) => item.id === "home");
+      if (idx !== -1) setActiveIndex(idx);
+    }
+  }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
+
   const navRef = useRef<HTMLDivElement | null>(null);
   const iconRefs = useRef<Array<HTMLSpanElement | null>>([]);
   const labelRefs = useRef<Array<HTMLSpanElement | null>>([]);

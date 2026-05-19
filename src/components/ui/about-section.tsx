@@ -67,11 +67,11 @@ export function AboutSection() {
 
         {/* О нас */}
         <div className="mb-20">
-          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400">
+          <p className="mb-6 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400 text-center md:text-left">
             О нас
           </p>
 
-          <h2 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl md:text-5xl lg:text-6xl">
+          <h2 className="text-3xl font-bold leading-[1.15] text-white sm:text-4xl md:text-5xl lg:text-6xl text-center md:text-left">
             Комплексная разработка{" "}
             <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
               IT&#8209;продуктов
@@ -82,7 +82,7 @@ export function AboutSection() {
 
           <div className="mt-10 h-px w-full bg-zinc-800" />
 
-          <p className="mt-10 text-lg text-zinc-400 leading-relaxed max-w-2xl">
+          <p className="mt-10 text-lg text-zinc-400 leading-relaxed max-w-2xl text-center md:text-left mx-auto md:mx-0">
             От стартапов до корпораций — мы подходим к каждой задаче
             индивидуально, выстраивая долгосрочные партнёрские отношения
             и обеспечивая поддержку на всех этапах работы.

@@ -61,16 +61,16 @@ export function ServicesSection() {
       <div className="mx-auto w-full max-w-6xl">
         <div className="grid md:grid-cols-2 md:gap-10 lg:gap-16">
           <div className="md:sticky md:top-32 md:h-[60vh] flex flex-col justify-center">
-            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400">
+            <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-indigo-400 text-center md:text-left">
               Что мы делаем
             </p>
-            <h2 className="mb-6 text-3xl md:text-4xl font-bold tracking-tight text-white">
+            <h2 className="mb-6 text-3xl md:text-4xl font-bold tracking-tight text-white text-center md:text-left">
               Чем мы{" "}
               <span className="bg-gradient-to-r from-indigo-400 to-violet-400 bg-clip-text text-transparent">
                 можем быть полезны вашему бизнесу
               </span>
             </h2>
-            <p className="max-w-prose text-sm md:text-base text-zinc-300 leading-relaxed">
+            <p className="max-w-prose text-sm md:text-base text-zinc-300 leading-relaxed text-center md:text-left">
               Работаем со стартапами и крупным бизнесом: проектируем,
               запускаем и развиваем веб-сайты, приложения и комплексные
               цифровые решения под конкретные бизнес-цели.
