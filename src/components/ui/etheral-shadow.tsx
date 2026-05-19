@@ -216,7 +216,7 @@ export function Component({
         {title ?? (
           <h1 className="md:text-7xl text-6xl lg:text-8xl font-bold text-center text-white relative z-20">
             <span>Moscow Factory</span>
-            <span className="ml-2 text-yellow-600 dark:text-yellow-500">
+            <span className="ml-2 text-indigo-400 dark:text-indigo-400">
               Tech
             </span>
           </h1>

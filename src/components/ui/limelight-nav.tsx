@@ -274,12 +274,12 @@ export const LimelightNav = ({
 
       <div
         ref={limelightRef}
-        className={`absolute top-0 z-10 h-[5px] rounded-full bg-yellow-400/70 ${
+        className={`absolute top-0 z-10 h-[5px] rounded-full bg-indigo-500/70 ${
           isReady ? "transition-[left,width] duration-400 ease-in-out" : ""
         } ${limelightClassName ?? ""}`}
         style={{ left: "-999px", width: 0 }}
       >
-        <div className="pointer-events-none absolute left-[-30%] top-[5px] h-14 w-[160%] bg-gradient-to-b from-yellow-400/20 to-transparent [clip-path:polygon(5%_100%,25%_0,75%_0,95%_100%)]" />
+        <div className="pointer-events-none absolute left-[-30%] top-[5px] h-14 w-[160%] bg-gradient-to-b from-indigo-500/20 to-transparent [clip-path:polygon(5%_100%,25%_0,75%_0,95%_100%)]" />
       </div>
     </nav>
   );

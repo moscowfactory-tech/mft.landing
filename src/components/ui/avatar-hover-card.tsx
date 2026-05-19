@@ -34,7 +34,7 @@ export function AvatarHoverCard({
         animate={{ scale: isHovered ? 1.05 : 1 }}
         transition={{ type: "spring", stiffness: 300, damping: 25 }}
       >
-        <Zap className="h-7 w-7 text-yellow-400" fill="currentColor" strokeWidth={0} />
+        <Zap className="h-7 w-7 text-indigo-400" fill="currentColor" strokeWidth={0} />
       </motion.div>
 
       {/* Expanded card */}
@@ -48,13 +48,13 @@ export function AvatarHoverCard({
             className="absolute right-0 top-12 z-50 w-64 rounded-xl border border-zinc-800 bg-zinc-900/95 shadow-2xl shadow-black/60 backdrop-blur-md overflow-hidden"
           >
             {/* Top accent */}
-            <div className="h-px w-full bg-gradient-to-r from-transparent via-yellow-400/50 to-transparent" />
+            <div className="h-px w-full bg-gradient-to-r from-transparent via-indigo-500/50 to-transparent" />
 
             <div className="p-4">
               {/* Avatar + name row */}
               <div className="flex items-center gap-3">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-zinc-800 border border-zinc-700">
-                  <Zap className="h-5 w-5 text-yellow-400" fill="currentColor" strokeWidth={0} />
+                  <Zap className="h-5 w-5 text-indigo-400" fill="currentColor" strokeWidth={0} />
                 </div>
                 <div className="min-w-0">
                   <motion.p
